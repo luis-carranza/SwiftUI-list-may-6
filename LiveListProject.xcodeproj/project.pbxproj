@@ -11,6 +11,8 @@
 		89770BE72644BF0400154D74 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89770BE62644BF0400154D74 /* ContentView.swift */; };
 		89770BE92644BF0600154D74 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 89770BE82644BF0600154D74 /* Assets.xcassets */; };
 		89770BEC2644BF0600154D74 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 89770BEB2644BF0600154D74 /* Preview Assets.xcassets */; };
+		89770BF42644C48000154D74 /* CountryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89770BF32644C48000154D74 /* CountryModel.swift */; };
+		89770BF62644C81100154D74 /* CountryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89770BF52644C81100154D74 /* CountryController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +22,8 @@
 		89770BE82644BF0600154D74 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		89770BEB2644BF0600154D74 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		89770BED2644BF0600154D74 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		89770BF32644C48000154D74 /* CountryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryModel.swift; sourceTree = "<group>"; };
+		89770BF52644C81100154D74 /* CountryController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +61,8 @@
 				89770BE82644BF0600154D74 /* Assets.xcassets */,
 				89770BED2644BF0600154D74 /* Info.plist */,
 				89770BEA2644BF0600154D74 /* Preview Content */,
+				89770BF32644C48000154D74 /* CountryModel.swift */,
+				89770BF52644C81100154D74 /* CountryController.swift */,
 			);
 			path = LiveListProject;
 			sourceTree = "<group>";
@@ -140,6 +146,8 @@
 			files = (
 				89770BE72644BF0400154D74 /* ContentView.swift in Sources */,
 				89770BE52644BF0400154D74 /* LiveListProjectApp.swift in Sources */,
+				89770BF62644C81100154D74 /* CountryController.swift in Sources */,
+				89770BF42644C48000154D74 /* CountryModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

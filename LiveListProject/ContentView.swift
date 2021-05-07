@@ -8,9 +8,17 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    var countryController = Countrycontroller()
+    
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        NavigationView {
+            List(countryController.countries) { country in
+                Text(country.name)
+            } // List
+            .navigationBarTitle("Countries", displayMode: .inline)
+        } // NavigationView
+        
     }
 }
 
