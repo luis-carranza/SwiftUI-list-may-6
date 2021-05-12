@@ -13,6 +13,7 @@
 		89770BEC2644BF0600154D74 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 89770BEB2644BF0600154D74 /* Preview Assets.xcassets */; };
 		89770BF42644C48000154D74 /* CountryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89770BF32644C48000154D74 /* CountryModel.swift */; };
 		89770BF62644C81100154D74 /* CountryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89770BF52644C81100154D74 /* CountryController.swift */; };
+		89770BFC264B64C500154D74 /* Detailview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89770BFB264B64C500154D74 /* Detailview.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		89770BED2644BF0600154D74 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		89770BF32644C48000154D74 /* CountryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryModel.swift; sourceTree = "<group>"; };
 		89770BF52644C81100154D74 /* CountryController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryController.swift; sourceTree = "<group>"; };
+		89770BFB264B64C500154D74 /* Detailview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Detailview.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,13 +58,14 @@
 		89770BE32644BF0400154D74 /* LiveListProject */ = {
 			isa = PBXGroup;
 			children = (
+				89770BFA264B647500154D74 /* AuthModule */,
 				89770BE42644BF0400154D74 /* LiveListProjectApp.swift */,
-				89770BE62644BF0400154D74 /* ContentView.swift */,
+				89770BF8264B641F00154D74 /* Models */,
+				89770BF7264B641300154D74 /* Views */,
+				89770BF9264B642D00154D74 /* Controllers */,
 				89770BE82644BF0600154D74 /* Assets.xcassets */,
 				89770BED2644BF0600154D74 /* Info.plist */,
 				89770BEA2644BF0600154D74 /* Preview Content */,
-				89770BF32644C48000154D74 /* CountryModel.swift */,
-				89770BF52644C81100154D74 /* CountryController.swift */,
 			);
 			path = LiveListProject;
 			sourceTree = "<group>";
@@ -73,6 +76,38 @@
 				89770BEB2644BF0600154D74 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		89770BF7264B641300154D74 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				89770BE62644BF0400154D74 /* ContentView.swift */,
+				89770BFB264B64C500154D74 /* Detailview.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		89770BF8264B641F00154D74 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				89770BF32644C48000154D74 /* CountryModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		89770BF9264B642D00154D74 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				89770BF52644C81100154D74 /* CountryController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		89770BFA264B647500154D74 /* AuthModule */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = AuthModule;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -146,6 +181,7 @@
 			files = (
 				89770BE72644BF0400154D74 /* ContentView.swift in Sources */,
 				89770BE52644BF0400154D74 /* LiveListProjectApp.swift in Sources */,
+				89770BFC264B64C500154D74 /* Detailview.swift in Sources */,
 				89770BF62644C81100154D74 /* CountryController.swift in Sources */,
 				89770BF42644C48000154D74 /* CountryModel.swift in Sources */,
 			);
