@@ -9,7 +9,8 @@ import SwiftUI
 
 struct ContentView: View {
     
-    var countryController = Countrycontroller()
+    @StateObject var countryController = Countrycontroller()
+   
     
     var body: some View {
         NavigationView {
@@ -21,21 +22,18 @@ struct ContentView: View {
             .navigationBarTitle("Countries", displayMode: .inline)
 
             .navigationBarItems(
-                trailing:NavigationLink(destination: AddCountryView(cityName: "Country")) {
+                trailing:
+                    NavigationLink(
+                        destination: AddCountryView().environmentObject(countryController)) {
                     Image(systemName: "plus").foregroundColor(/*@START_MENU_TOKEN@*/.blue/*@END_MENU_TOKEN@*/)
-                }
-            )
-   
+                })
         } // NavigationView
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        NavigationView{
           ContentView()
-        }
-        
     }
 }
 
