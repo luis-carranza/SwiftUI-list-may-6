@@ -9,26 +9,36 @@ import SwiftUI
 
 struct ContentView: View {
     
-    @StateObject var countryController = Countrycontroller()
+    @ObservedObject var countryController = Countrycontroller()
    
     
     var body: some View {
         NavigationView {
-            List(countryController.countries) { country in
-                NavigationLink(destination: DetailView(country: country)) {
-                    Text(country.name)
-                }
+            List {
+                ForEach(countryController.countries){ country in
+                    NavigationLink(destination: DetailView(country: country)) {
+                        Text(country.name)
+                    }
+                }.onDelete(perform: deleteItem)
             }
+            
             .navigationBarTitle("Countries", displayMode: .inline)
 
             .navigationBarItems(
                 trailing:
                     NavigationLink(
-                        destination: AddCountryView().environmentObject(countryController)) {
+                        destination: AddCountryView(countryController: countryController)) {
                     Image(systemName: "plus").foregroundColor(/*@START_MENU_TOKEN@*/.blue/*@END_MENU_TOKEN@*/)
                 })
         } // NavigationView
     }
+    
+    
+    private func deleteItem(at indexSet: IndexSet) {
+        self.countryController.countries.remove(atOffsets: indexSet)
+    }
+    
+    
 }
 
 struct ContentView_Previews: PreviewProvider {
